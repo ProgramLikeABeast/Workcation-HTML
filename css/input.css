@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+
+@layer components {
+    .btn{
+        @apply inline-block rounded-lg shadow-lg uppercase tracking-wider
+                px-4 py-2 transform transition sm:text-xl m-2;
+    }
+    .btn1{
+        @apply
+        /*bg color? text color? font?*/
+        bg-indigo-500 text-white font-bold
+        /*hover properties*/
+        hover:bg-indigo-400 hover:-translate-y-1
+        /*active properties*/
+        active:bg-indigo-600
+        /*focus properties*/
+        focus:ring focus:ring-offset-1 focus:outline-none focus:ring-opacity-60
+    }
+    .btn2{
+        @apply
+        /*bg color? text color? font?*/
+        bg-gray-400 text-indigo-900 font-semibold
+        /*hover properties*/
+        hover:bg-gray-300 hover:-translate-y-1
+        /*active properties*/
+        active:bg-gray-500
+        /*focus properties*/
+        focus:ring focus:ring-offset-1 focus:outline-none focus:ring-opacity-60
+    }
+}
+
+@tailwind utilities;
+
